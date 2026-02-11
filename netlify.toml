@@ -1,0 +1,17 @@
+[build]
+  base = "frontend"
+  command = "npm run build"
+  publish = "dist"
+
+[dev]
+  command = "npx vite --port 5173"
+  targetPort = 5173
+  port = 8888
+  autoLaunch = false
+  framework = "#custom"
+
+# SPA fallback: todas as rotas vão para index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

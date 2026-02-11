@@ -1,0 +1,9 @@
+{
+  "name": "netlify-functions",
+  "private": true,
+  "dependencies": {
+    "@netlify/functions": "^3.0.0",
+    "@supabase/supabase-js": "^2.49.0",
+    "openai": "^6.19.0"
+  }
+}
